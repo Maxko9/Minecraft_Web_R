@@ -8,17 +8,17 @@ body {
 nav {
     justify-content: center;
     background-color: black;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     border-bottom: 4px solid Gray;
     display: flex;
-    gap: 2rem;
+    gap: 32px;
 }
 
 nav a {
     color: lightgreen;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -27,7 +27,7 @@ nav a:hover {
 }
 
 .container {
-    padding: 2rem;
+    padding: 32px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -35,16 +35,17 @@ nav a:hover {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .minecraft-card {
     background-color: dimgray;
     border: 3px solid gray;
-    padding: 1.5rem;
+    padding: 24px;
     text-align: center;
     transition: transform 0.2s;
+    border-radius: 20px;
 }
 
 .minecraft-card:hover {
@@ -56,4 +57,65 @@ nav a:hover {
     color: lightgreen;
     text-decoration: none;
     font-weight: bold;
+}
+
+/*Historie --> */
+
+.container-history {
+    padding: 32px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-image: url("src/assets/History/2014.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80vh;
+    border: 4px solid gray;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+    max-width: 800px;
+}
+
+.history-card {
+    background-color: dimgray;
+    border: 3px solid gray;
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.history-card:hover {
+    border-color: yellow;
+    transform: translateX(5px);
+}
+
+.history-year {
+    background-color: black;
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    border: 2px solid dimgray;
+    border-radius: 20px;
+    min-width: 140px;
+    text-align: center;
+}
+
+.history-content h3 {
+    margin: 0 0 8px 0;
+    color: lightgreen;
+}
+
+.history-content p {
+    margin: 0;
+    color: lightblue;
+    line-height: 1.5;
 }
